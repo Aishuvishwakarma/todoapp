@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    width: 100%;
+    height: 100%;
+    background-color: #ff6060;
+    display: flex;
+}
+#left{
+    width: 400px;
+    height: 100%;
+    background: linear-gradient(90deg,#217a69,#5BD8C1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left .form{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#left .form input{
+    height: 45px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 0 20px;
+    border: 1px solid #31AC96;
+    outline: none;
+    box-shadow: 0 3px 5px 1px #31ac9645;
+    color:#31AC96;
+}
+#left .form textarea{
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #31AC96;
+    outline: none;
+    box-shadow: 0 3px 5px 1px #31ac9645;
+    color:#31AC96;
+    resize: none;
+}
+#left .form button{
+    height: 45px;
+    width: 300px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    box-shadow: 0 3px 5px 1px #9afeec45;
+    color: #fff;
+    background: linear-gradient(90deg,#5BD8C1,#217a69);
+    transition: .5s;
+}
+#left .form button:hover{
+    background: transparent;
+    border: 1px solid #ffff;
+    cursor: pointer;
+}
+#right{
+    width:calc(100% - 400px) ;
+    height: 100%;
+    background-color: green;
+}
+#right nav{
+    width: 100%;
+    height: 70px;
+    background-color: #f2f2f2;
+    border-bottom: .5px solid rgb(86, 86, 86);
+    /* box-shadow: 10px 0px 10px 5px rgb(0, 0, 0); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+#right nav input{
+    height: 45px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 0 20px;
+    border: 1px solid #31AC96;
+    outline: none;
+    box-shadow: 0 3px 5px 1px #31ac9645;
+    color:#31AC96;
+}
+#right .cardcontainer{
+    height: calc(100% - 70px);
+    width: 100%;
+    background-color: #dbdbdb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px 1px #31ac9645;
+    border-radius: 10px;
+}
+.card img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
